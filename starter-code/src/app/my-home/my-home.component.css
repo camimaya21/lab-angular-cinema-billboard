@@ -1,0 +1,14 @@
+img{
+  height: 570px;
+  width: 300px;
+}
+
+ul{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+li{
+  list-style: none;
+  width: 300px;
+}

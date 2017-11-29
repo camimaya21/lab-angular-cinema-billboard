@@ -1,0 +1,14 @@
+ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+li{
+  margin: 30px;
+}
+li:first-child{
+  margin-left: 0;
+}
+h1{
+  text-align: center;
+}
