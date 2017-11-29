@@ -1,3 +1,10 @@
 <p>
   my-home works!
 </p>
+<button (click)="showMovies()">Show Movies</button>
+
+<ul>
+  <li *ngFor="let movie of this.infoMovies.Movies, let i = index">
+    <p>{{movie.title}}</p>
+  </li>
+</ul>

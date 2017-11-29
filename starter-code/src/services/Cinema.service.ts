@@ -3,6 +3,7 @@ import { IMovies } from '../app/interfaces/IMovies';
 import sampleMovies from '../sample-movies';
 import * as _ from 'underscore';
 
+
 @Injectable()
 export class CinemaService {
   Movies: Array<IMovies> = sampleMovies;
@@ -11,10 +12,11 @@ export class CinemaService {
   constructor() { }
 
   getMovies(){
+    console.log(this.Movies);
     return this.Movies;
   }
 
-  getMovie(idMovie:number){
+  getDetail(idMovie:number){
       return _.findWhere(this.Movies, { id: idMovie });
   }
 

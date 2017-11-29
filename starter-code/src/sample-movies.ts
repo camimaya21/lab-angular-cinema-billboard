@@ -16,7 +16,9 @@ const sampleMovies: Array<any> = [
       "William Sadler",
       "Clancy Brown",
       "Gil Bellows"
-    ]
+    ],
+    room: 1,
+    hours: "Wednesday 19:30, 22:30"
   }, {
     id: 2,
     title: "The Godfather",
@@ -34,7 +36,9 @@ const sampleMovies: Array<any> = [
       "Richard S. Castellano",
       "Robert Duvall",
       "Sterling Hayden"
-    ]
+    ],
+    room: 2,
+    hours: "Wednesday 19:30, 22:30"
   }, {
     id: 3,
     title: "The Godfather Part II",
@@ -52,7 +56,9 @@ const sampleMovies: Array<any> = [
       "Robert De Niro",
       "John Cazale",
       "Talia Shire"
-    ]
+    ],
+    room: 3,
+    hours: "Wednesday 19:30, 22:30"
   }, {
     id: 4,
     title: "The Dark Knight",
@@ -70,7 +76,9 @@ const sampleMovies: Array<any> = [
       "Michael Caine",
       "Maggie Gyllenhaal",
       "Gary Oldman"
-    ]
+    ],
+    room: 4,
+    hours: "Wednesday 19:30, 22:30"
   }, {
     id: 5,
     title: "Schindler's List",
@@ -88,7 +96,9 @@ const sampleMovies: Array<any> = [
       "Caroline Goodall",
       "Jonathan Sagall",
       "Embeth Davidtz"
-    ]
+    ],
+    room: 5,
+    hours: "Wednesday 19:30, 22:30"
   }
 ]
 export default sampleMovies;
