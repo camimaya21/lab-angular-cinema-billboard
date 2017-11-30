@@ -1,13 +1,11 @@
 import { Injectable } from '@angular/core';
 import { IMovies } from '../app/interfaces/IMovies';
 import sampleMovies from '../sample-movies';
-import * as _ from 'underscore';
 
 
 @Injectable()
 export class CinemaService {
-  Movies: Array<IMovies> = sampleMovies;
-  // logMovies: Array<sampleMovies>;
+  Movies: Array<IMovies> = sampleMovies
 
   constructor() { }
 
@@ -16,8 +14,8 @@ export class CinemaService {
     return this.Movies;
   }
 
-  getDetail(idMovie:number){
-      return _.findWhere(this.Movies, { id: idMovie });
+  getDetail(id){
+      return this.Movies[id];
   }
 
 }

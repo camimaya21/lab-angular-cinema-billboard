@@ -1,6 +1,18 @@
-<p>
-  my-movie works!
-</p>
-<p>
-  <button (click)="goToHome()"> home </button>
+<div class="container">
+  <div class="left">
+    <h2>ROOM {{movie.room}}</h2>
+    <p>{{movie.hours}}</p>
+    <img src="{{movie.poster}}" alt="{{movie.title}}">
+  </div>
+  <div class="info">
+    <h1>{{movie.title}}</h1>
+    <p><b>Synopsis: </b>{{movie.synopsis}}</p>
+    <p><b>Genres: </b>{{movie.genres}}</p>
+    <p><b>Year: </b>{{movie.year}}</p>
+    <p><b>Director: </b>{{movie.director}}</p>
+    <p><b>Actors: </b>{{movie.actors}}</p>
+  </div>
+</div>
+<p class="button">
+  <a [routerLink]="['/home']"> <button>Go Home</button> </a>
 </p>

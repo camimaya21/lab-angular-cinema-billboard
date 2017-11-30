@@ -11,6 +11,7 @@ export class MyHomeComponent implements OnInit {
 
   constructor(private router: Router, public infoMovies:CinemaService) { }
   listOfMovies;
+
   ngOnInit() {
   }
 
@@ -18,4 +19,5 @@ getMovies(){
     this.listOfMovies=this.infoMovies.getMovies();
     console.log("show movies!!!" + this.infoMovies)
   }
+
 }

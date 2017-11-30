@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
+import { CinemaService } from '../../services/Cinema.service';
 
 @Component({
   selector: 'app-my-movie',
@@ -8,13 +9,14 @@ import { Router } from '@angular/router';
 })
 export class MyMovieComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: ActivatedRoute, public infoMovies: CinemaService) { }
+  movieId: Number;
+  movie = {};
 
   ngOnInit() {
-  }
-
-  goToHome() {
-    this.router.navigate(['/home']);  // <!-- Programmatically navigate to home
+    this.router.params
+    .subscribe((params) => this.movieId = Number(params['id'])-1);
+    this.movie = this.infoMovies.getDetail(this.movieId);
   }
 
 }
